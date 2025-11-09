@@ -39,6 +39,7 @@
     "@interledger/http-signature-utils": "workspace:2.0.3",
     "@interledger/openapi": "workspace:2.0.4",
     "base64url": "^3.0.1",
+    "express": "^4.21.2",
     "http-message-signatures": "^0.1.2",
     "ky": "^1.2.3",
     "pino": "^8.11.0",

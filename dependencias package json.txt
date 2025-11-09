@@ -1,0 +1,10 @@
+    "preinstall": "npx only-allow pnpm",
+    "lint": "eslint --max-warnings=0 --fix .",
+    "format": "prettier --write . && pnpm lint",
+    "changeset:add": "pnpm changeset add",
+    "ci:version": "pnpm changeset version && pnpm i --lockfile-only",
+    "ci:publish": "pnpm changeset publish",
+    "checks": "pnpm check:prettier && pnpm check:lint",
+    "check:lint": "eslint --max-warnings=0 .",
+    "check:prettier": "prettier --check .",
+    "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
