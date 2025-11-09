@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "build": "pnpm clean && tsc --build tsconfig.json",
-    "clean": "rm -fr dist/",
+    "clean": "rimraf dist/",
     "test": "jest --passWithNoTests --maxWorkers=50%",
     "prepack": "pnpm build"
   },
@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.12.7",
-    "@types/uuid": "^9.0.0"
+    "@types/uuid": "^9.0.0",
+    "rimraf": "^6.1.0"
   }
 }
